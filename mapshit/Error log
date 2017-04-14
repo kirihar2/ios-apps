@@ -1,0 +1,6 @@
+Error log
+
+4/11 
+
+Build error caused by having duplicate files under build phases. 
+- click on build phases and check under compile sources for duplicate files

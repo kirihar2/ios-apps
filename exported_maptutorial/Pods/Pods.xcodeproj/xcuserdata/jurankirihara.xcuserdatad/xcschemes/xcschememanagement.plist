@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-exported_maptutorial.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-exported_maptutorialTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-exported_maptutorialUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>lottie-ios.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>paper-onboarding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>436DD5906B4E1B432C3F41AB48B014DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586CBE01EEAD92BC794D53276267A06E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7128139D23E875750EE5F64B0AFB54D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EF1C10089CA4BC53F4A2C98187D8304</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5C29066B32BC3DBA7CD2538B4ED3A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

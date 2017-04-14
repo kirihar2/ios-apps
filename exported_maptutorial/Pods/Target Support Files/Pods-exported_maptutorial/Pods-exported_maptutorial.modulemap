@@ -1,0 +1,6 @@
+framework module Pods_exported_maptutorial {
+  umbrella header "Pods-exported_maptutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}

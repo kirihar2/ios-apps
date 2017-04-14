@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'exported_maptutorial' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for exported_maptutorial
+
+  target 'exported_maptutorialTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'exported_maptutorialUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+pod 'lottie-ios'
+pod 'paper-onboarding', '~> 2.0.1'
+
+end
