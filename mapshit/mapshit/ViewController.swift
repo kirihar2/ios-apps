@@ -21,7 +21,7 @@ class ViewController: UIViewController, PaperOnboardingDataSource, PaperOnboardi
     let images = ["truck","location","phone"]
     var ret = [OnboardingItemInfo]()
     
-    let reset = 0
+    var resetValue = 0
     
     
     override func viewDidLoad() {
@@ -44,8 +44,7 @@ class ViewController: UIViewController, PaperOnboardingDataSource, PaperOnboardi
         
         onboardingView.dataSource = self
         onboardingView.delegate = self
-     
-
+        
     }
     
    
@@ -54,7 +53,9 @@ class ViewController: UIViewController, PaperOnboardingDataSource, PaperOnboardi
         return 3
     }
     func onboardingItemAtIndex(_ index: Int) -> OnboardingItemInfo {
-        return ret[index]
+        
+            return ret[index]
+        
     }
     
     func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {

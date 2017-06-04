@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		89837CB877A2C712DC776AA3 /* Pods_mapshit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C416CC038AF99860B3A6AD /* Pods_mapshit.framework */; };
+		E11BDA201EB27F5B003C398A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E11BDA1F1EB27F5B003C398A /* libz.tbd */; };
+		E11BDA221EB282A6003C398A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E11BDA211EB282A6003C398A /* tessdata */; };
 		E16BF5A01E944BF200A200FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BF59F1E944BF200A200FF /* AppDelegate.swift */; };
 		E16BF5A21E944BF200A200FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BF5A11E944BF200A200FF /* ViewController.swift */; };
 		E16BF5A51E944BF200A200FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16BF5A31E944BF200A200FF /* Main.storyboard */; };
@@ -23,6 +25,7 @@
 		E1890DD51E9CD31B00024FA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1890DD11E9CA5B300024FA0 /* MainViewController.swift */; };
 		E1890DF91E9EC9E500024FA0 /* mapshitLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1890DF71E9EC9E500024FA0 /* mapshitLocation.xcdatamodeld */; };
 		E1890DFD1EA0607200024FA0 /* SideOptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1890DFC1EA0607200024FA0 /* SideOptionTableViewController.swift */; };
+		E1890DFF1EA1A51100024FA0 /* SideOptionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1890DFE1EA1A51100024FA0 /* SideOptionTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 		17C416CC038AF99860B3A6AD /* Pods_mapshit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapshit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		317C9EB8D6718853AC8EC96B /* Pods-mapshit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapshit.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapshit/Pods-mapshit.release.xcconfig"; sourceTree = "<group>"; };
 		AE34F58F021A552E2209BF63 /* Pods-mapshit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapshit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapshit/Pods-mapshit.debug.xcconfig"; sourceTree = "<group>"; };
+		E11BDA1F1EB27F5B003C398A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E11BDA211EB282A6003C398A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		E16BF59C1E944BF200A200FF /* mapshit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapshit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16BF59F1E944BF200A200FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E16BF5A11E944BF200A200FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		E1890DD11E9CA5B300024FA0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E1890DF81E9EC9E500024FA0 /* mapshitLocation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mapshitLocation.xcdatamodel; sourceTree = "<group>"; };
 		E1890DFC1EA0607200024FA0 /* SideOptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideOptionTableViewController.swift; sourceTree = "<group>"; };
+		E1890DFE1EA1A51100024FA0 /* SideOptionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideOptionTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11BDA201EB27F5B003C398A /* libz.tbd in Frameworks */,
 				E16BF5D21E999F6C00A200FF /* MapKit.framework in Frameworks */,
 				89837CB877A2C712DC776AA3 /* Pods_mapshit.framework in Frameworks */,
 			);
@@ -144,6 +151,8 @@
 				E16BF5E21E9A969200A200FF /* Animation */,
 				E16BF5DC1E99B64B00A200FF /* Images.xcassets */,
 				E1890DFC1EA0607200024FA0 /* SideOptionTableViewController.swift */,
+				E11BDA211EB282A6003C398A /* tessdata */,
+				E1890DFE1EA1A51100024FA0 /* SideOptionTableView.swift */,
 				E16BF59F1E944BF200A200FF /* AppDelegate.swift */,
 				E16BF5A11E944BF200A200FF /* ViewController.swift */,
 				E1890DD11E9CA5B300024FA0 /* MainViewController.swift */,
@@ -161,6 +170,7 @@
 		E16BF5D01E999F6C00A200FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E11BDA1F1EB27F5B003C398A /* libz.tbd */,
 				E16BF6311E9AA50000A200FF /* Lottie.framework */,
 				E16BF6321E9AA50000A200FF /* paper_onboarding.framework */,
 				E16BF5D11E999F6C00A200FF /* MapKit.framework */,
@@ -301,6 +311,7 @@
 				E16BF5E51E9A9A4A00A200FF /* buttonOff.json in Resources */,
 				E16BF5DD1E99B64B00A200FF /* Images.xcassets in Resources */,
 				E16BF5AA1E944BF200A200FF /* LaunchScreen.storyboard in Resources */,
+				E11BDA221EB282A6003C398A /* tessdata in Resources */,
 				E16BF5A51E944BF200A200FF /* Main.storyboard in Resources */,
 				E16BF5E61E9A9A4A00A200FF /* buttonOn.json in Resources */,
 				E16BF5E11E9A968B00A200FF /* hamburger.json in Resources */,
@@ -380,6 +391,7 @@
 				E16BF5DF1E99CA7400A200FF /* ToMainSegueue.swift in Sources */,
 				E16BF5A21E944BF200A200FF /* ViewController.swift in Sources */,
 				E1890DFD1EA0607200024FA0 /* SideOptionTableViewController.swift in Sources */,
+				E1890DFF1EA1A51100024FA0 /* SideOptionTableView.swift in Sources */,
 				E1890DF91E9EC9E500024FA0 /* mapshitLocation.xcdatamodeld in Sources */,
 				E16BF5DA1E99AF5500A200FF /* OnboardingView.swift in Sources */,
 				E16BF5A01E944BF200A200FF /* AppDelegate.swift in Sources */,
@@ -537,11 +549,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BUQDT5UKKN;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = mapshit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juran.mapshit;
@@ -556,11 +563,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BUQDT5UKKN;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = mapshit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juran.mapshit;

@@ -9,4 +9,6 @@ target 'mapshit' do
 pod 'lottie-ios'
 
 pod 'paper-onboarding', '~> 2.0.1'
+pod 'TesseractOCRiOS', '4.0.0'
+pod 'Firebase'
 end

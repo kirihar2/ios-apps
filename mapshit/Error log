@@ -4,3 +4,10 @@ Error log
 
 Build error caused by having duplicate files under build phases. 
 - click on build phases and check under compile sources for duplicate files
+
+
+4/14
+
+when clicking the hamburger animations before completion the animation goes off screen. Need lock when hamburger is animating
+
+- fixed by adding flag to indicate animation ended.. in menuToggle

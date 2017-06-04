@@ -70,21 +70,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-eX-R2y">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-eX-R2y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="U7N-Nb-VKj" id="bF1-Gd-IcR"/>
                                 </connections>
                             </mapView>
-                            <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-HV-GZD">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VaW-Pg-26Z">
+                                <rect key="frame" x="67" y="50" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZR3-hw-X0E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29L-aR-afn">
+                                <rect key="frame" x="115" y="80" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="65f-Nl-ZFW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Add Current Location">
+                                    <color key="titleColor" red="0.3858066201" green="0.3858066201" blue="0.3858066201" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-a8-eYv">
+                                <rect key="frame" x="147" y="110" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ce1-VL-tFw"/>
+                                    <constraint firstAttribute="height" constant="30" id="pI0-uj-UMh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Drop Pin">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-HV-GZD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" ambiguous="YES" id="lNf-9T-dMu">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" id="lNf-9T-dMu">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-a1-b8Y">
+                                        <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-a1-b8Y">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Ald-Z5-Bju">
@@ -101,8 +132,28 @@
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="leading" secondItem="TAF-4T-kfd" secondAttribute="leading" id="0dp-DT-TLc"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="bottom" secondItem="xM9-1B-MeS" secondAttribute="top" id="5V0-cw-vcr"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="leading" secondItem="pL0-HV-GZD" secondAttribute="leading" id="7dy-CQ-Fow"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="top" secondItem="TAF-4T-kfd" secondAttribute="top" id="ED6-7c-QhF"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="bottom" secondItem="pL0-HV-GZD" secondAttribute="bottom" id="H8P-o0-K1W"/>
+                            <constraint firstItem="bRe-a8-eYv" firstAttribute="top" secondItem="29L-aR-afn" secondAttribute="bottom" id="TUh-3N-n9v"/>
+                            <constraint firstItem="VaW-Pg-26Z" firstAttribute="centerX" secondItem="TAF-4T-kfd" secondAttribute="centerX" id="WuZ-TU-f2N"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="centerX" secondItem="VaW-Pg-26Z" secondAttribute="centerX" id="XOB-2d-eWg"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="trailing" secondItem="pL0-HV-GZD" secondAttribute="trailing" id="Y3W-Pk-mFB"/>
+                            <constraint firstItem="VaW-Pg-26Z" firstAttribute="top" secondItem="aZk-B8-dIo" secondAttribute="bottom" constant="30" id="Yz4-RZ-ywf"/>
+                            <constraint firstItem="Mu1-eX-R2y" firstAttribute="top" secondItem="pL0-HV-GZD" secondAttribute="top" id="bwg-U6-5Jc"/>
+                            <constraint firstItem="VaW-Pg-26Z" firstAttribute="leading" secondItem="TAF-4T-kfd" secondAttribute="leadingMargin" constant="51" id="c18-X1-Iwn"/>
+                            <constraint firstItem="bRe-a8-eYv" firstAttribute="centerX" secondItem="TAF-4T-kfd" secondAttribute="centerX" id="ht0-SA-rig"/>
+                            <constraint firstItem="29L-aR-afn" firstAttribute="top" secondItem="VaW-Pg-26Z" secondAttribute="bottom" id="hvg-wM-z7g"/>
+                            <constraint firstItem="bRe-a8-eYv" firstAttribute="height" secondItem="29L-aR-afn" secondAttribute="height" id="nYG-1D-xgI"/>
+                            <constraint firstItem="29L-aR-afn" firstAttribute="centerX" secondItem="TAF-4T-kfd" secondAttribute="centerX" id="u7N-Fz-Odb"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="addLocationView" destination="1qW-DF-u2b" id="9Z0-2G-7IY"/>
+                        <outlet property="addressDisplay" destination="VaW-Pg-26Z" id="Gx0-uB-RSl"/>
                         <outlet property="detailView" destination="Pcs-dw-ML4" id="UbF-ac-d6Q"/>
                         <outlet property="detailViewInfo" destination="atd-xB-O3K" id="fU0-LD-BPQ"/>
                         <outlet property="detailViewLabel" destination="RmA-6f-tuF" id="fgu-tZ-s8T"/>
@@ -118,6 +169,10 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1qW-DF-u2b">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="154"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </scrollView>
                 <view contentMode="scaleToFill" id="Pcs-dw-ML4">
                     <rect key="frame" x="0.0" y="0.0" width="260" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,7 +184,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Lorem ipsum dolor sit er " textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atd-xB-O3K">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Lorem ipsum dolor sit er " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="atd-xB-O3K">
                             <rect key="frame" x="16" y="42" width="234" height="59"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

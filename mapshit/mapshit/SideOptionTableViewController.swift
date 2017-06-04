@@ -7,18 +7,26 @@
 //
 
 import UIKit
-
+import CoreData
 class SideOptionTableViewController: UITableViewController {
     
+    var locations : [Location] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let location = Location(context: context)
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
+        do {
+            locations = try context.fetch(fetchRequest) as! [Location]
+            print(locations)
+        } catch {
+            fatalError("Failed to fetch employees: \(error)")
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtofnItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,18 +43,21 @@ class SideOptionTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return locations.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+//        if locations[indexPath.row].isFavorited {
+//                cell.detailTextLabel?.text = locations[indexPath.row].title
+//            }
+//        
+//        // Configure the cell...
+//        
+//        return cell
+//    }
+ 
 
     /*
     // Override to support conditional editing of the table view.
