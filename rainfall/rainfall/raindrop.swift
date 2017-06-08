@@ -30,7 +30,7 @@ class raindrop: SKNode {
         raindrop.size = CGSize(width: width, height: height)
         //texture = SKTexture(imageNamed: "pusheen_open")
         
-        let filestring = "water\(color+1)"
+        let filestring = "water\(color)"
         texture = SKTexture(imageNamed: filestring)
             
         
@@ -44,7 +44,7 @@ class raindrop: SKNode {
         
         
     }
-    func changeVelocity(v: CGVector) {
+    private func changeVelocity(v: CGVector) {
         raindrop?.physicsBody?.velocity = v
     }
     private func applyPhys() {
@@ -68,5 +68,12 @@ class raindrop: SKNode {
         raindrop.texture = texture
         
         applyPhys()
+    }
+    func pauseRaindrop() {
+        
+        changeVelocity(v: CGVector(dx: 0, dy: 0))
+    }
+    func resumeRaindrop() {
+        changeVelocity(v: CGVector(dx: 0, dy: -1 * velocity))
     }
 }
